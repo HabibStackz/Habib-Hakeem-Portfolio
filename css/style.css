@@ -3,21 +3,150 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+
+
+.main-header{ 
+  height: 80px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: rgb(27, 27, 27);
 }
 
-p {
-  margin: 0;
+.logo {
+  margin-top: 5px;
+  height: 65px;
+  padding: 4px;
+  padding-right: 20px;
+  padding-left: 100px;
+  width: fit-content;
+  color: rgb(27, 27, 27);
+  background-color:#f6e0a4;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+}
+
+.nav-list a{
+  margin-right: 100px;
+  text-decoration: none;
+  color: #f6e0a4;
+}
+
+.hero-banner {
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/hero.jpg");
+}
+
+#content-grid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 25% 25% 25%;
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas: 
+  "about aboutMeText aboutMeText"
+  "work workBanner workBanner"
+  "work workBanner workBanner"
+  "work LED prework"
+  "work pf-website refactoring"
+   "work contact contact";
+}
+
+#about {
+  margin-top: 0px;
+  margin-right:80px;
+  grid-area: about;
+  text-align: right;
+  font-size: 30px;
+}
+
+#aboutMeText {
+  grid-area: aboutMeText;
+  font-size: 14px;
+  margin-top: 50px;
+  
+}
+
+#work {
+  grid-area: work;
+  margin-top: 0px;
+  margin-right:80px;
+  text-align: right;
+  font-size: 30px;
+}
+
+#workBanner {
+  grid-area: workBanner;
+  background-image: url("../images/02-hero-bg.jpg");
+  margin-top: 40px;
+  background-size: cover;
+
+}
+
+#Prework {
+  grid-area: prework;
+  background-image: url("../images/02-portfolio-3.jpg");
+  height: 200px;
+  background-size: cover;
+}
+
+#refactoring {
+  grid-area: refactoring;
+  background-image: url("../images/02-run-buddy.jpg");
+  height: 200px;
+  background-size: cover;
+}
+
+#pf-website {
+  grid-area: pf-website;
+  background-image: url("../images/hero.jpg");
+  height: 200px;
+  background-size: cover;
+}
+
+#LED {
+  grid-area: LED;
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-size: cover;
+  }
+
+h3 {
+  background-color: #f6e0a4;
+  width: fit-content;
+  padding: 10px;
+  font-size: large;
+  }
+/* #calculator {
+  grid-area: calculator;
+  background-image: url("../images/02-portfolio-2.jpg");
+} */
+
+#contact {
+  grid-area: contact;
+}
+
+#resume {
+  grid-area: resume;
 }
