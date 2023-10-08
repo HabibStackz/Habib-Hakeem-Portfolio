@@ -3,10 +3,60 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+}
+
+
+
+.main-header{ 
+  height: 80px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: rgb(27, 27, 27);
+}
+
+.logo {
+  margin-top: 5px;
+  height: 65px;
+  padding: 4px;
+  padding-right: 20px;
+  padding-left: 100px;
+  width: fit-content;
+  color: white;
+  background-color: rgb(43, 102, 121);
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+}
+
+.nav-list a{
+  margin-right: 100px;
+  text-decoration: none;
+  color: white;
+}
+
+.hero-banner {
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  background-image: url(./images/hero.jpg);
 }
 
 h1,
