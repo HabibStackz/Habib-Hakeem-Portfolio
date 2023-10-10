@@ -20,6 +20,8 @@ body {
   background-color: rgb(27, 27, 27);
 }
 
+/* logo */
+
 .logo {
   margin-top: 5px;
   height: 65px;
@@ -30,6 +32,8 @@ body {
   color: rgb(27, 27, 27);
   background-color:#f6e0a4;
 }
+
+/* navBar */
 
 .navbar {
   height: 80px;
@@ -45,37 +49,47 @@ body {
 }
 
 .nav-list a{
-  margin-right: 100px;
+  margin-right: 90px;
   text-decoration: none;
   color: #f6e0a4;
+  font-size: medium;
 }
+
+/* Hero */
 
 .hero-banner {
   height: 500px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
+  width: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("../images/hero.jpg");
 }
 
 #content-grid {
-  margin: 0px 5%;
+  margin: 0px 0%;
   display: grid;
-  grid-template-columns: 25% 25% 25%;
+  grid-template-columns: 25% 30% 30%;
   grid-template-rows: 25% 25% 25%;
-  row-gap: 20px;
-  column-gap: 20px;
+  row-gap: 15px;
+  column-gap: 15px;
   grid-template-areas: 
   "about aboutMeText aboutMeText"
   "work workBanner workBanner"
   "work workBanner workBanner"
   "work LED prework"
   "work pf-website refactoring"
-   "work contact contact";
+  "contact contact-details contact-details"
+  "resume resume-link resume-link";
+
+   
 }
 
+/* About me area */
+
 #about {
-  margin-top: 0px;
+  border-right: 8px solid #503911;
+  padding-right: 20px;
+  margin-top: 20px;
   margin-right:80px;
   grid-area: about;
   text-align: right;
@@ -84,69 +98,202 @@ body {
 
 #aboutMeText {
   grid-area: aboutMeText;
-  font-size: 14px;
-  margin-top: 50px;
-  
+  font-size: 20px;
+  text-align: justify;
+  font-style: italic;
+  margin: 11px 0;
+  padding-bottom: 20px;
 }
+
+/* Work area */
 
 #work {
   grid-area: work;
-  margin-top: 0px;
+  margin-top: 40px;
   margin-right:80px;
   text-align: right;
   font-size: 30px;
+  border-right: 8px solid #503911;
+  padding-right: 20px;  
 }
 
 #workBanner {
   grid-area: workBanner;
-  background-image: url("../images/02-hero-bg.jpg");
+  background: rgba(80, 72, 28, 0.5);
+  background-image: url("../images/workimg.jpg");
   margin-top: 40px;
   background-size: cover;
-
+  border: 5px solid #f6e0a4;
+  border-radius: 15px;
+  background-blend-mode: darken;
 }
+
+#workBanner:hover {
+  cursor: pointer;
+  background-blend-mode: normal;
+}
+
+#contact {
+  grid-area: contact;
+  margin-top: 0px;
+  margin-right:80px;
+  margin-bottom: 0px;
+  text-align: right;
+  font-size: 30px;
+  border-right: 8px solid #503911;
+  padding-right: 20px;
+}
+.page-section-contact h2 {
+  padding-bottom: 20px;
+  margin: 0;
+  
+}
+#resume {
+  grid-area: resume;
+  margin-top: 0px;
+  margin-right:80px;
+  text-align: right;
+  font-size: 30px;
+  border-right: 8px solid #503911;
+  padding-right: 20px;
+  padding-bottom: 0px;
+}
+
+#resume h2 {
+  margin: 0;
+}
+
+#resume-link {
+  grid-area: resume-link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  text-decoration: none;
+  color:#503911;
+  max-height: fit-content;
+  }
 
 #Prework {
   grid-area: prework;
-  background-image: url("../images/02-portfolio-3.jpg");
-  height: 200px;
+  background: rgba(80, 72, 28, 0.5);
+  background-image: url("../images/study-guide.jpeg");
   background-size: cover;
+  border: 5px solid #f6e0a4;
+  border-radius: 15px;
+  height: 200px;
+  background-blend-mode: darken;
+  padding-top: 80px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+#Prework:hover {
+  cursor: pointer;
+  background-blend-mode: normal;
 }
 
 #refactoring {
   grid-area: refactoring;
-  background-image: url("../images/02-run-buddy.jpg");
-  height: 200px;
+  background: rgba(80, 72, 28, 0.5);
+  background-image: url("../images/horiseon.png");
   background-size: cover;
+  border: 5px solid #f6e0a4;
+  border-radius: 15px;
+  background-blend-mode: darken;
+  padding-top: 80px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+
+
+#refactoring:hover {
+  cursor: pointer;
+  background-blend-mode: normal;
 }
 
 #pf-website {
   grid-area: pf-website;
+  background: rgba(80, 72, 28, 0.5);
   background-image: url("../images/hero.jpg");
-  height: 200px;
   background-size: cover;
+  height: 200px;
+  border: 5px solid #f6e0a4;
+  border-radius: 15px;
+  background-blend-mode: darken;
+   padding-top: 80px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+
+#pf-website:hover {
+  cursor: pointer;
+  background-blend-mode: normal;
 }
 
 #LED {
   grid-area: LED;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background: rgba(80, 72, 28, 0.5);
+  background-image: url("../images/huddle.png");
   background-size: cover;
+  border: 5px solid #f6e0a4;
+  border-radius: 15px;
+  background-blend-mode: darken;
+  padding-top: 80px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
   }
 
+  #LED:hover{
+    background-blend-mode: normal;
+    cursor: pointer;
+  }
+
+#contact-details {
+  grid-area: contact-details;
+  display: flex;
+  width: 100%;
+  height: 30%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+ }
+
+ .phone {
+  border-bottom: 10px solid #f6e0a4;
+  padding-bottom: 10px;
+ }
+ .email {
+  border-bottom: 10px solid #f6e0a4;
+  padding-bottom: 10px;
+ }
+ .github {
+  border-bottom: 10px solid #f6e0a4;
+  padding-bottom: 10px;
+ }
+  
+#contact-details ul, li, a {
+  font-size: larger;
+  text-decoration: none;
+  color: #503911; 
+}
+  
 h3 {
   background-color: #f6e0a4;
   width: fit-content;
   padding: 10px;
   font-size: large;
+  color: rgb(27, 27, 27);
+  
+}
+
+  h3 a {
+    text-decoration: none;
   }
-/* #calculator {
-  grid-area: calculator;
-  background-image: url("../images/02-portfolio-2.jpg");
-} */
 
-#contact {
-  grid-area: contact;
-}
-
-#resume {
-  grid-area: resume;
-}
+  @media screen {
+    
+  }
