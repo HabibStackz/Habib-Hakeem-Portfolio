@@ -49,18 +49,19 @@ body {
 }
 
 .nav-list a{
-  margin-right: 100px;
+  margin-right: 90px;
   text-decoration: none;
   color: #f6e0a4;
+  font-size: medium;
 }
 
 /* Hero */
 
 .hero-banner {
   height: 500px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
+  width: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("../images/hero.jpg");
 }
 
@@ -77,8 +78,8 @@ body {
   "work workBanner workBanner"
   "work LED prework"
   "work pf-website refactoring"
-   "contact contact-details contact-details"
-   "resume resume-link resume-link";
+  "contact contact-details contact-details"
+  "resume resume-link resume-link";
 
    
 }
@@ -86,7 +87,9 @@ body {
 /* About me area */
 
 #about {
-  margin-top: 0px;
+  border-right: 8px solid #503911;
+  padding-right: 20px;
+  margin-top: 20px;
   margin-right:80px;
   grid-area: about;
   text-align: right;
@@ -98,50 +101,26 @@ body {
   font-size: 20px;
   text-align: justify;
   font-style: italic;
-  margin-top: 50px;
-  
+  margin: 11px 0;
+  padding-bottom: 20px;
 }
 
 /* Work area */
 
 #work {
   grid-area: work;
-  margin-top: 0px;
+  margin-top: 40px;
   margin-right:80px;
   text-align: right;
   font-size: 30px;
+  border-right: 8px solid #503911;
+  padding-right: 20px;  
 }
-
-#contact {
-  grid-area: contact;
-  margin-top: 0px;
-  margin-right:80px;
-  text-align: right;
-  font-size: 30px;
-}
-
-#resume {
-  grid-area: resume;
-  margin-top: 0px;
-  margin-right:80px;
-  text-align: right;
-  font-size: 30px;
-}
-
-#resume-link {
-  grid-area: resume-link;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: larger;
-  text-decoration: none;
-  color: black;
-  }
 
 #workBanner {
   grid-area: workBanner;
   background: rgba(80, 72, 28, 0.5);
-  background-image: url("../images/02-hero-bg.jpg");
+  background-image: url("../images/workimg.jpg");
   margin-top: 40px;
   background-size: cover;
   border: 5px solid #f6e0a4;
@@ -154,6 +133,47 @@ body {
   background-blend-mode: normal;
 }
 
+#contact {
+  grid-area: contact;
+  margin-top: 0px;
+  margin-right:80px;
+  margin-bottom: 0px;
+  text-align: right;
+  font-size: 30px;
+  border-right: 8px solid #503911;
+  padding-right: 20px;
+}
+.page-section-contact h2 {
+  padding-bottom: 20px;
+  margin: 0;
+  
+}
+#resume {
+  grid-area: resume;
+  margin-top: 0px;
+  margin-right:80px;
+  text-align: right;
+  font-size: 30px;
+  border-right: 8px solid #503911;
+  padding-right: 20px;
+  padding-bottom: 0px;
+}
+
+#resume h2 {
+  margin: 0;
+}
+
+#resume-link {
+  grid-area: resume-link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  text-decoration: none;
+  color:#503911;
+  max-height: fit-content;
+  }
+
 #Prework {
   grid-area: prework;
   background: rgba(80, 72, 28, 0.5);
@@ -163,6 +183,9 @@ body {
   border-radius: 15px;
   height: 200px;
   background-blend-mode: darken;
+  padding-top: 80px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
 }
 
 #Prework:hover {
@@ -178,7 +201,12 @@ body {
   border: 5px solid #f6e0a4;
   border-radius: 15px;
   background-blend-mode: darken;
+  padding-top: 80px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
 }
+
+
 
 #refactoring:hover {
   cursor: pointer;
@@ -193,8 +221,12 @@ body {
   height: 200px;
   border: 5px solid #f6e0a4;
   border-radius: 15px;
-  background-blend-mode: darken
+  background-blend-mode: darken;
+   padding-top: 80px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
 }
+
 
 #pf-website:hover {
   cursor: pointer;
@@ -204,11 +236,14 @@ body {
 #LED {
   grid-area: LED;
   background: rgba(80, 72, 28, 0.5);
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/huddle.png");
   background-size: cover;
   border: 5px solid #f6e0a4;
   border-radius: 15px;
-  background-blend-mode: darken
+  background-blend-mode: darken;
+  padding-top: 80px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
   }
 
   #LED:hover{
@@ -219,16 +254,31 @@ body {
 #contact-details {
   grid-area: contact-details;
   display: flex;
+  width: 100%;
+  height: 30%;
   justify-content: space-between;
-  margin-right: 30px;
   align-items: center;
   list-style: none;
-  font-size: larger;
-  }
+  padding: 0;
+ }
+
+ .phone {
+  border-bottom: 10px solid #f6e0a4;
+  padding-bottom: 10px;
+ }
+ .email {
+  border-bottom: 10px solid #f6e0a4;
+  padding-bottom: 10px;
+ }
+ .github {
+  border-bottom: 10px solid #f6e0a4;
+  padding-bottom: 10px;
+ }
   
-#contact-details a {
+#contact-details ul, li, a {
+  font-size: larger;
   text-decoration: none;
-  color: black;
+  color: #503911; 
 }
   
 h3 {
@@ -236,12 +286,14 @@ h3 {
   width: fit-content;
   padding: 10px;
   font-size: large;
-  ;
+  color: rgb(27, 27, 27);
   
 }
 
   h3 a {
     text-decoration: none;
-    color: rgb(27, 27, 27);
+  }
+
+  @media screen {
     
   }
