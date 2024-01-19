@@ -5,6 +5,7 @@ Welcome to my personal portfolio showcasing my skills, projects, and professiona
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Link](#link)
 - [Screenshot](#screenshot)
 - [About Me](#about-me)
 - [Work](#work)
@@ -14,6 +15,9 @@ Welcome to my personal portfolio showcasing my skills, projects, and professiona
 ## Introduction
 
 This repository contains the source code for my personal portfolio website. It serves as a platform to present my skills, highlight projects, and provide information about my professional background.
+
+## Link
+- [Portfolio Website](https://habibstackz.github.io/Habib-Hakeem-Portfolio/)
 
 ## Screenshot
 ![Screenshot 2024-01-19 215724](https://github.com/HabibStackz/password-generator/assets/105345889/00b5a614-f049-46db-a512-4d52cb617e6c)
